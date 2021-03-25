@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>爱你</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="爱你" />
+	<meta name="description" content="爱你" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<link href="css/ohmygod.css" rel="stylesheet" type="text/css"/>
+	<style>
+	.main {
+		font-size: 14px;
+		width: 450px;
+		margin: auto;
+		background: #FFF;
+		padding: 20px;
+		margin-top: 100px;
+		border-radius: 10px;
+		box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.35);
+	}
+
+	button {
+		border: none;
+		outline: none;
+		padding: 11px 32px;
+		font-size: 14px;
+		background: #444444;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+		color: #FFF;
+		border-radius: 27px;
+		margin: auto;
+		display: block;
+		font-weight: 800;
+	}
+</style>
+
+</head>
+<body onload="update()">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-4 col-md-4">
+				<a  class="thumbnail">
+					<img src="http://qiniu.maqianli.cn/img1.jpg" alt="...">
+				</a>
+			</div>
+			<div class="col-xs-4 col-md-4">
+				<a class="thumbnail">
+					<img src="http://qiniu.maqianli.cn/img2.jpg" alt="...">
+				</a>
+			</div>
+			<div class="col-xs-4 col-md-4">
+				<a  class="thumbnail">
+					<img src="http://qiniu.maqianli.cn/img3.jpg" alt="...">
+				</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-4 col-md-4">
+				<a  class="thumbnail">
+					<img src="http://qiniu.maqianli.cn/img4.jpg" alt="...">
+				</a>
+			</div>
+			<div class="col-xs-4 col-md-4" >
+				<a  class="thumbnail" href="loves-es6.html" >
+					<img src="http://qiniu.maqianli.cn/pic.jpg" alt="..." >
+				</a>
+			</div>
+			<div class="col-xs-4 col-md-4">
+				<a class="thumbnail">
+					<img src="http://qiniu.maqianli.cn/img6.jpg" alt="..."  >
+				</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-4 col-md-4">
+				<a  class="thumbnail">
+					<img src="http://qiniu.maqianli.cn/img7.jpg" alt="...">
+				</a>
+			</div>
+			<div class="col-xs-4 col-md-4">
+				<a  class="thumbnail">
+					<img src="http://qiniu.maqianli.cn/img8.jpg" alt="...">
+				</a>
+			</div>
+			<div class="col-xs-4 col-md-4">
+				<a  class="thumbnail">
+					<img src="http://qiniu.maqianli.cn/img9.jpg" alt="...">
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="main">
+		<br>
+		<br>
+		<h2>
+			噔噔噔 ❤️ 阿里
+			<br>
+			<br>
+			已相爱：
+			<span id=result1>
+			</span>
+			天
+		</h2>
+		<h5>
+			准确的说：
+			<span id=result2>
+			</span>
+			天
+		</h5>
+		<div>
+
+		</body>
+
+		<script>
+			function calb() {
+
+				y2 = 2018;
+				m2 = 9;
+				d2 = 14;
+
+				day0 = new Date(y2, m2 - 1, d2, 23, 55);
+				day1 = new Date(y2, m2 - 1, d2);
+				day2 = new Date();
+
+				var result1 = (day2 - day1) / 86400000;
+				document.getElementById("result1").innerHTML = parseInt(result1);
+
+				var result2 = (day2 - day0) / 86400000;
+				document.getElementById("result2").innerHTML = result2;
+
+			}
+
+			function update() {
+				window.setInterval(calb, 1000);
+			}
+		</script>
+
+		</html>
+
+
